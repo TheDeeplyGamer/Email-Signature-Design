@@ -1,2 +1,2 @@
-# Email-Signature-Design
+# Email Signature Design
 Design Email Signature
