@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <style type="text/css">
+      table {
+        font-size: 12px;
+        color: #333333;
+        width: 100%;
+        border-width: 1px;
+        border-color: #729ea5;
+        border-collapse: collapse;
+      }
+      tr {
+        background-color: #1abc9c;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      td {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-width: 1px;
+        padding: 10px;
+        border-style: solid;
+        border-color: #27ae60;
+        border: 3px solid yellow;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body bgcolor="#a5b1c2">
+    <table border="2">
+      <tr>
+        <td style="background-color: #1abc9c; color: white">Box 1</td>
+        <td style="background-color: #16a085; color: #000000">Box 2</td>
+        <td style="background-color: #2ecc71; color: #9b59b6">Box 3</td>
+        <td style="background-color: #2980b9; color: #e74c3c">Box 4</td>
+        <td style="background-color: #c0392b; color: #7f8c8d">Box 5</td>
+        <td style="background-color: #f39c12; color: #e74c3c">Box 6</td>
+        <td style="background-color: #f1c40f; color: #e67e22">Box 7</td>
+        <td style="background-color: #f39c12; color: #bdc3c7">Box 8</td>
+        <td style="background-color: #f6e58d; color: #c0392b">Box 9</td>
+        <td style="background-color: #f6e58d; color: #130f40">Box 10</td>
+        <td style="background-color: #130f40; color: #535c68">Box 11</td>
+        <td style="background-color: #be2edd; color: #30336b">Box 12</td>
+        <td style="background-color: #535c68; color: #c7ecee">Box 13</td>
+        <td style="background-color: #1B1464; color: #D980FA">Box 14</td>
+        <td style="background-color: #009432; color: #0652DD">Box 15</td>
+        <td style="background-color: #6F1E51; color: white">Box 16</td>
+        <td style="background-color: #F79F1F; color: #EA2027">Box 17</td>
+        <td style="background-color: #C4E538; color: #1B1464">Box 18</td>
+        <td style="background-color: #1B1464; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #0652DD">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: red; color: white">Box 1</td>
+        <td style="background-color: #0652DD; color: black">Box 2</td>
+        <td style="background-color: #1B1464; color: gray">Box 3</td>
+        <td style="background-color: #A3CB38; color: #D980FA">Box 4</td>
+        <td style="background-color: black; color: white">Box 5</td>
+        <td style="background-color: blue; color: black">Box 6</td>
+        <td style="background-color: yellow; color: blue">Box 7</td>
+        <td style="background-color: violet; color: green">Box 8</td>
+        <td style="background-color: teal; color: tomato">Box 9</td>
+        <td style="background-color: aqua; color: black">Box 10</td>
+        <td style="background-color: darkblue; color: gray">Box 11</td>
+        <td style="background-color: gold; color: navy">Box 12</td>
+        <td style="background-color: green; color: brown">Box 13</td>
+        <td style="background-color: white; color: black">Box 14</td>
+        <td style="background-color: black; color: maroon">Box 15</td>
+        <td style="background-color: maroon; color: magenta">Box 16</td>
+        <td style="background-color: darkmagenta; color: burlywood">Box 17</td>
+        <td style="background-color: #6F1E51; color: #0652DD">Box 18</td>
+        <td style="background-color: #D980FA; color: #6F1E51">Box 19</td>
+        <td style="background-color: #A3CB38; color: #9980FA">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #ef5777; color: #575fcf">Box 1</td>
+        <td style="background-color: #4bcffa; color: #34e7e4">Box 2</td>
+        <td style="background-color: #0be881; color: #0fbcf9">Box 3</td>
+        <td style="background-color: #3c40c6; color: white">Box 4</td>
+        <td style="background-color: #00d8d6; color: #05c46b">Box 5</td>
+        <td style="background-color: #ffc048; color: #ff5e57">Box 6</td>
+        <td style="background-color: #808e9b; color: #1e272e">Box 7</td>
+        <td style="background-color: #3c40c6; color: #0fbcf9">Box 8</td>
+        <td style="background-color: #ff3f34; color: #1e272e">Box 9</td>
+        <td style="background-color: #00d8d6; color: #ffc048">Box 10</td>
+        <td style="background-color: #0fbcf9; color: #3c40c6">Box 11</td>
+        <td style="background-color: #575fcf; color: #ff5e57">Box 12</td>
+        <td style="background-color: #f53b57; color: #ff5e57">Box 13</td>
+        <td style="background-color: #FFC312; color: #A3CB38">Box 14</td>
+        <td style="background-color: #12CBC4; color: #FDA7DF">Box 15</td>
+        <td style="background-color: #FDA7DF; color: #ED4C67">Box 16</td>
+        <td style="background-color: #EE5A24; color: #009432">Box 17</td>
+        <td style="background-color: #EA2027; color: #1B1464">Box 18</td>
+        <td style="background-color: #5758BB; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #1B1464">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #40407a; color: #706fd3">Box 1</td>
+        <td style="background-color: #f7f1e3; color: #34ace0">Box 2</td>
+        <td style="background-color: #2c2c54; color: #474787">Box 3</td>
+        <td style="background-color: #ffb300; color: #504e4a">Box 4</td>
+        <td style="background-color: #ff5252; color: #ff793f">Box 5</td>
+        <td style="background-color: #b33939; color: #33d9b2">Box 6</td>
+        <td style="background-color: #b33939; color: #34ace0">Box 7</td>
+        <td style="background-color: #34ace0; color: #227093">Box 8</td>
+        <td style="background-color: rgb(149, 78, 78); color: rgb(86, 164, 41)">Box 9</td>
+        <td style="background-color: rgb(149, 222, 65); color: rgb(21, 197, 132)">Box 10</td>
+        <td style="background-color: rgb(174, 102, 102); color: rgb(30, 138, 122)">Box 11</td>
+        <td style="background-color: rgb(135, 115, 192); color: rgb(145, 203, 134)">Box 12</td>
+        <td style="background-color: rgb(34, 75, 163); color: white">Box 13</td>
+        <td style="background-color: rgb(100, 70, 183); color: rgba(144, 19, 132, 0.686)">Box 14</td>
+        <td style="background-color: rgb(56, 60, 188); color: rgb(37, 116, 87)">Box 15</td>
+        <td style="background-color: rgb(93, 11, 40); color: rgb(149, 186, 176)">Box 16</td>
+        <td style="background-color: rgb(99, 47, 187); color: rgb(96, 189, 160)">Box 17</td>
+        <td style="background-color: rgb(131, 63, 63); color: rgb(62, 9, 9)">Box 18</td>
+        <td style="background-color: rgb(214, 153, 153); color: rgb(33, 15, 15)">Box 19</td>
+        <td style="background-color: rgb(34, 156, 91); color: rgb(199, 47, 47)">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #1abc9c; color: white">Box 1</td>
+        <td style="background-color: #16a085; color: #000000">Box 2</td>
+        <td style="background-color: #2ecc71; color: #9b59b6">Box 3</td>
+        <td style="background-color: #2980b9; color: #e74c3c">Box 4</td>
+        <td style="background-color: #c0392b; color: #7f8c8d">Box 5</td>
+        <td style="background-color: #f39c12; color: #e74c3c">Box 6</td>
+        <td style="background-color: #f1c40f; color: #e67e22">Box 7</td>
+        <td style="background-color: #f39c12; color: #bdc3c7">Box 8</td>
+        <td style="background-color: #f6e58d; color: #c0392b">Box 9</td>
+        <td style="background-color: #f6e58d; color: #130f40">Box 10</td>
+        <td style="background-color: #130f40; color: #535c68">Box 11</td>
+        <td style="background-color: #be2edd; color: #30336b">Box 12</td>
+        <td style="background-color: #535c68; color: #c7ecee">Box 13</td>
+        <td style="background-color: #1B1464; color: #D980FA">Box 14</td>
+        <td style="background-color: #009432; color: #0652DD">Box 15</td>
+        <td style="background-color: #6F1E51; color: white">Box 16</td>
+        <td style="background-color: #F79F1F; color: #EA2027">Box 17</td>
+        <td style="background-color: #C4E538; color: #1B1464">Box 18</td>
+        <td style="background-color: #1B1464; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #0652DD">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: red; color: white">Box 1</td>
+        <td style="background-color: #0652DD; color: black">Box 2</td>
+        <td style="background-color: #1B1464; color: gray">Box 3</td>
+        <td style="background-color: #A3CB38; color: #D980FA">Box 4</td>
+        <td style="background-color: black; color: white">Box 5</td>
+        <td style="background-color: blue; color: black">Box 6</td>
+        <td style="background-color: yellow; color: blue">Box 7</td>
+        <td style="background-color: violet; color: green">Box 8</td>
+        <td style="background-color: teal; color: tomato">Box 9</td>
+        <td style="background-color: aqua; color: black">Box 10</td>
+        <td style="background-color: darkblue; color: gray">Box 11</td>
+        <td style="background-color: gold; color: navy">Box 12</td>
+        <td style="background-color: green; color: brown">Box 13</td>
+        <td style="background-color: white; color: black">Box 14</td>
+        <td style="background-color: black; color: maroon">Box 15</td>
+        <td style="background-color: maroon; color: magenta">Box 16</td>
+        <td style="background-color: darkmagenta; color: burlywood">Box 17</td>
+        <td style="background-color: #6F1E51; color: #0652DD">Box 18</td>
+        <td style="background-color: #D980FA; color: #6F1E51">Box 19</td>
+        <td style="background-color: #A3CB38; color: #9980FA">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #ef5777; color: #575fcf">Box 1</td>
+        <td style="background-color: #4bcffa; color: #34e7e4">Box 2</td>
+        <td style="background-color: #0be881; color: #0fbcf9">Box 3</td>
+        <td style="background-color: #3c40c6; color: white">Box 4</td>
+        <td style="background-color: #00d8d6; color: #05c46b">Box 5</td>
+        <td style="background-color: #ffc048; color: #ff5e57">Box 6</td>
+        <td style="background-color: #808e9b; color: #1e272e">Box 7</td>
+        <td style="background-color: #3c40c6; color: #0fbcf9">Box 8</td>
+        <td style="background-color: #ff3f34; color: #1e272e">Box 9</td>
+        <td style="background-color: #00d8d6; color: #ffc048">Box 10</td>
+        <td style="background-color: #0fbcf9; color: #3c40c6">Box 11</td>
+        <td style="background-color: #575fcf; color: #ff5e57">Box 12</td>
+        <td style="background-color: #f53b57; color: #ff5e57">Box 13</td>
+        <td style="background-color: #FFC312; color: #A3CB38">Box 14</td>
+        <td style="background-color: #12CBC4; color: #FDA7DF">Box 15</td>
+        <td style="background-color: #FDA7DF; color: #ED4C67">Box 16</td>
+        <td style="background-color: #EE5A24; color: #009432">Box 17</td>
+        <td style="background-color: #EA2027; color: #1B1464">Box 18</td>
+        <td style="background-color: #5758BB; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #1B1464">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #40407a; color: #706fd3">Box 1</td>
+        <td style="background-color: #f7f1e3; color: #34ace0">Box 2</td>
+        <td style="background-color: #2c2c54; color: #474787">Box 3</td>
+        <td style="background-color: #ffb300; color: #504e4a">Box 4</td>
+        <td style="background-color: #ff5252; color: #ff793f">Box 5</td>
+        <td style="background-color: #b33939; color: #33d9b2">Box 6</td>
+        <td style="background-color: #b33939; color: #34ace0">Box 7</td>
+        <td style="background-color: #34ace0; color: #227093">Box 8</td>
+        <td style="background-color: rgb(149, 78, 78); color: rgb(86, 164, 41)">Box 9</td>
+        <td style="background-color: rgb(149, 222, 65); color: rgb(21, 197, 132)">Box 10</td>
+        <td style="background-color: rgb(174, 102, 102); color: rgb(30, 138, 122)">Box 11</td>
+        <td style="background-color: rgb(135, 115, 192); color: rgb(145, 203, 134)">Box 12</td>
+        <td style="background-color: rgb(34, 75, 163); color: white">Box 13</td>
+        <td style="background-color: rgb(100, 70, 183); color: rgba(144, 19, 132, 0.686)">Box 14</td>
+        <td style="background-color: rgb(56, 60, 188); color: rgb(37, 116, 87)">Box 15</td>
+        <td style="background-color: rgb(93, 11, 40); color: rgb(149, 186, 176)">Box 16</td>
+        <td style="background-color: rgb(99, 47, 187); color: rgb(96, 189, 160)">Box 17</td>
+        <td style="background-color: rgb(131, 63, 63); color: rgb(62, 9, 9)">Box 18</td>
+        <td style="background-color: rgb(214, 153, 153); color: rgb(33, 15, 15)">Box 19</td>
+        <td style="background-color: rgb(34, 156, 91); color: rgb(199, 47, 47)">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #1abc9c; color: white">Box 1</td>
+        <td style="background-color: #16a085; color: #000000">Box 2</td>
+        <td style="background-color: #2ecc71; color: #9b59b6">Box 3</td>
+        <td style="background-color: #2980b9; color: #e74c3c">Box 4</td>
+        <td style="background-color: #c0392b; color: #7f8c8d">Box 5</td>
+        <td style="background-color: #f39c12; color: #e74c3c">Box 6</td>
+        <td style="background-color: #f1c40f; color: #e67e22">Box 7</td>
+        <td style="background-color: #f39c12; color: #bdc3c7">Box 8</td>
+        <td style="background-color: #f6e58d; color: #c0392b">Box 9</td>
+        <td style="background-color: #f6e58d; color: #130f40">Box 10</td>
+        <td style="background-color: #130f40; color: #535c68">Box 11</td>
+        <td style="background-color: #be2edd; color: #30336b">Box 12</td>
+        <td style="background-color: #535c68; color: #c7ecee">Box 13</td>
+        <td style="background-color: #1B1464; color: #D980FA">Box 14</td>
+        <td style="background-color: #009432; color: #0652DD">Box 15</td>
+        <td style="background-color: #6F1E51; color: white">Box 16</td>
+        <td style="background-color: #F79F1F; color: #EA2027">Box 17</td>
+        <td style="background-color: #C4E538; color: #1B1464">Box 18</td>
+        <td style="background-color: #1B1464; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #0652DD">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: red; color: white">Box 1</td>
+        <td style="background-color: #0652DD; color: black">Box 2</td>
+        <td style="background-color: #1B1464; color: gray">Box 3</td>
+        <td style="background-color: #A3CB38; color: #D980FA">Box 4</td>
+        <td style="background-color: black; color: white">Box 5</td>
+        <td style="background-color: blue; color: black">Box 6</td>
+        <td style="background-color: yellow; color: blue">Box 7</td>
+        <td style="background-color: violet; color: green">Box 8</td>
+        <td style="background-color: teal; color: tomato">Box 9</td>
+        <td style="background-color: aqua; color: black">Box 10</td>
+        <td style="background-color: darkblue; color: gray">Box 11</td>
+        <td style="background-color: gold; color: navy">Box 12</td>
+        <td style="background-color: green; color: brown">Box 13</td>
+        <td style="background-color: white; color: black">Box 14</td>
+        <td style="background-color: black; color: maroon">Box 15</td>
+        <td style="background-color: maroon; color: magenta">Box 16</td>
+        <td style="background-color: darkmagenta; color: burlywood">Box 17</td>
+        <td style="background-color: #6F1E51; color: #0652DD">Box 18</td>
+        <td style="background-color: #D980FA; color: #6F1E51">Box 19</td>
+        <td style="background-color: #A3CB38; color: #9980FA">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #ef5777; color: #575fcf">Box 1</td>
+        <td style="background-color: #4bcffa; color: #34e7e4">Box 2</td>
+        <td style="background-color: #0be881; color: #0fbcf9">Box 3</td>
+        <td style="background-color: #3c40c6; color: white">Box 4</td>
+        <td style="background-color: #00d8d6; color: #05c46b">Box 5</td>
+        <td style="background-color: #ffc048; color: #ff5e57">Box 6</td>
+        <td style="background-color: #808e9b; color: #1e272e">Box 7</td>
+        <td style="background-color: #3c40c6; color: #0fbcf9">Box 8</td>
+        <td style="background-color: #ff3f34; color: #1e272e">Box 9</td>
+        <td style="background-color: #00d8d6; color: #ffc048">Box 10</td>
+        <td style="background-color: #0fbcf9; color: #3c40c6">Box 11</td>
+        <td style="background-color: #575fcf; color: #ff5e57">Box 12</td>
+        <td style="background-color: #f53b57; color: #ff5e57">Box 13</td>
+        <td style="background-color: #FFC312; color: #A3CB38">Box 14</td>
+        <td style="background-color: #12CBC4; color: #FDA7DF">Box 15</td>
+        <td style="background-color: #FDA7DF; color: #ED4C67">Box 16</td>
+        <td style="background-color: #EE5A24; color: #009432">Box 17</td>
+        <td style="background-color: #EA2027; color: #1B1464">Box 18</td>
+        <td style="background-color: #5758BB; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #1B1464">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #40407a; color: #706fd3">Box 1</td>
+        <td style="background-color: #f7f1e3; color: #34ace0">Box 2</td>
+        <td style="background-color: #2c2c54; color: #474787">Box 3</td>
+        <td style="background-color: #ffb300; color: #504e4a">Box 4</td>
+        <td style="background-color: #ff5252; color: #ff793f">Box 5</td>
+        <td style="background-color: #b33939; color: #33d9b2">Box 6</td>
+        <td style="background-color: #b33939; color: #34ace0">Box 7</td>
+        <td style="background-color: #34ace0; color: #227093">Box 8</td>
+        <td style="background-color: rgb(149, 78, 78); color: rgb(86, 164, 41)">Box 9</td>
+        <td style="background-color: rgb(149, 222, 65); color: rgb(21, 197, 132)">Box 10</td>
+        <td style="background-color: rgb(174, 102, 102); color: rgb(30, 138, 122)">Box 11</td>
+        <td style="background-color: rgb(135, 115, 192); color: rgb(145, 203, 134)">Box 12</td>
+        <td style="background-color: rgb(34, 75, 163); color: white">Box 13</td>
+        <td style="background-color: rgb(100, 70, 183); color: rgba(144, 19, 132, 0.686)">Box 14</td>
+        <td style="background-color: rgb(56, 60, 188); color: rgb(37, 116, 87)">Box 15</td>
+        <td style="background-color: rgb(93, 11, 40); color: rgb(149, 186, 176)">Box 16</td>
+        <td style="background-color: rgb(99, 47, 187); color: rgb(96, 189, 160)">Box 17</td>
+        <td style="background-color: rgb(131, 63, 63); color: rgb(62, 9, 9)">Box 18</td>
+        <td style="background-color: rgb(214, 153, 153); color: rgb(33, 15, 15)">Box 19</td>
+        <td style="background-color: rgb(34, 156, 91); color: rgb(199, 47, 47)">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #1abc9c; color: white">Box 1</td>
+        <td style="background-color: #16a085; color: #000000">Box 2</td>
+        <td style="background-color: #2ecc71; color: #9b59b6">Box 3</td>
+        <td style="background-color: #2980b9; color: #e74c3c">Box 4</td>
+        <td style="background-color: #c0392b; color: #7f8c8d">Box 5</td>
+        <td style="background-color: #f39c12; color: #e74c3c">Box 6</td>
+        <td style="background-color: #f1c40f; color: #e67e22">Box 7</td>
+        <td style="background-color: #f39c12; color: #bdc3c7">Box 8</td>
+        <td style="background-color: #f6e58d; color: #c0392b">Box 9</td>
+        <td style="background-color: #f6e58d; color: #130f40">Box 10</td>
+        <td style="background-color: #130f40; color: #535c68">Box 11</td>
+        <td style="background-color: #be2edd; color: #30336b">Box 12</td>
+        <td style="background-color: #535c68; color: #c7ecee">Box 13</td>
+        <td style="background-color: #1B1464; color: #D980FA">Box 14</td>
+        <td style="background-color: #009432; color: #0652DD">Box 15</td>
+        <td style="background-color: #6F1E51; color: white">Box 16</td>
+        <td style="background-color: #F79F1F; color: #EA2027">Box 17</td>
+        <td style="background-color: #C4E538; color: #1B1464">Box 18</td>
+        <td style="background-color: #1B1464; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #0652DD">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: red; color: white">Box 1</td>
+        <td style="background-color: #0652DD; color: black">Box 2</td>
+        <td style="background-color: #1B1464; color: gray">Box 3</td>
+        <td style="background-color: #A3CB38; color: #D980FA">Box 4</td>
+        <td style="background-color: black; color: white">Box 5</td>
+        <td style="background-color: blue; color: black">Box 6</td>
+        <td style="background-color: yellow; color: blue">Box 7</td>
+        <td style="background-color: violet; color: green">Box 8</td>
+        <td style="background-color: teal; color: tomato">Box 9</td>
+        <td style="background-color: aqua; color: black">Box 10</td>
+        <td style="background-color: darkblue; color: gray">Box 11</td>
+        <td style="background-color: gold; color: navy">Box 12</td>
+        <td style="background-color: green; color: brown">Box 13</td>
+        <td style="background-color: white; color: black">Box 14</td>
+        <td style="background-color: black; color: maroon">Box 15</td>
+        <td style="background-color: maroon; color: magenta">Box 16</td>
+        <td style="background-color: darkmagenta; color: burlywood">Box 17</td>
+        <td style="background-color: #6F1E51; color: #0652DD">Box 18</td>
+        <td style="background-color: #D980FA; color: #6F1E51">Box 19</td>
+        <td style="background-color: #A3CB38; color: #9980FA">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #ef5777; color: #575fcf">Box 1</td>
+        <td style="background-color: #4bcffa; color: #34e7e4">Box 2</td>
+        <td style="background-color: #0be881; color: #0fbcf9">Box 3</td>
+        <td style="background-color: #3c40c6; color: white">Box 4</td>
+        <td style="background-color: #00d8d6; color: #05c46b">Box 5</td>
+        <td style="background-color: #ffc048; color: #ff5e57">Box 6</td>
+        <td style="background-color: #808e9b; color: #1e272e">Box 7</td>
+        <td style="background-color: #3c40c6; color: #0fbcf9">Box 8</td>
+        <td style="background-color: #ff3f34; color: #1e272e">Box 9</td>
+        <td style="background-color: #00d8d6; color: #ffc048">Box 10</td>
+        <td style="background-color: #0fbcf9; color: #3c40c6">Box 11</td>
+        <td style="background-color: #575fcf; color: #ff5e57">Box 12</td>
+        <td style="background-color: #f53b57; color: #ff5e57">Box 13</td>
+        <td style="background-color: #FFC312; color: #A3CB38">Box 14</td>
+        <td style="background-color: #12CBC4; color: #FDA7DF">Box 15</td>
+        <td style="background-color: #FDA7DF; color: #ED4C67">Box 16</td>
+        <td style="background-color: #EE5A24; color: #009432">Box 17</td>
+        <td style="background-color: #EA2027; color: #1B1464">Box 18</td>
+        <td style="background-color: #5758BB; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #1B1464">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #40407a; color: #706fd3">Box 1</td>
+        <td style="background-color: #f7f1e3; color: #34ace0">Box 2</td>
+        <td style="background-color: #2c2c54; color: #474787">Box 3</td>
+        <td style="background-color: #ffb300; color: #504e4a">Box 4</td>
+        <td style="background-color: #ff5252; color: #ff793f">Box 5</td>
+        <td style="background-color: #b33939; color: #33d9b2">Box 6</td>
+        <td style="background-color: #b33939; color: #34ace0">Box 7</td>
+        <td style="background-color: #34ace0; color: #227093">Box 8</td>
+        <td style="background-color: rgb(149, 78, 78); color: rgb(86, 164, 41)">Box 9</td>
+        <td style="background-color: rgb(149, 222, 65); color: rgb(21, 197, 132)">Box 10</td>
+        <td style="background-color: rgb(174, 102, 102); color: rgb(30, 138, 122)">Box 11</td>
+        <td style="background-color: rgb(135, 115, 192); color: rgb(145, 203, 134)">Box 12</td>
+        <td style="background-color: rgb(34, 75, 163); color: white">Box 13</td>
+        <td style="background-color: rgb(100, 70, 183); color: rgba(144, 19, 132, 0.686)">Box 14</td>
+        <td style="background-color: rgb(56, 60, 188); color: rgb(37, 116, 87)">Box 15</td>
+        <td style="background-color: rgb(93, 11, 40); color: rgb(149, 186, 176)">Box 16</td>
+        <td style="background-color: rgb(99, 47, 187); color: rgb(96, 189, 160)">Box 17</td>
+        <td style="background-color: rgb(131, 63, 63); color: rgb(62, 9, 9)">Box 18</td>
+        <td style="background-color: rgb(214, 153, 153); color: rgb(33, 15, 15)">Box 19</td>
+        <td style="background-color: rgb(34, 156, 91); color: rgb(199, 47, 47)">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #1abc9c; color: white">Box 1</td>
+        <td style="background-color: #16a085; color: #000000">Box 2</td>
+        <td style="background-color: #2ecc71; color: #9b59b6">Box 3</td>
+        <td style="background-color: #2980b9; color: #e74c3c">Box 4</td>
+        <td style="background-color: #c0392b; color: #7f8c8d">Box 5</td>
+        <td style="background-color: #f39c12; color: #e74c3c">Box 6</td>
+        <td style="background-color: #f1c40f; color: #e67e22">Box 7</td>
+        <td style="background-color: #f39c12; color: #bdc3c7">Box 8</td>
+        <td style="background-color: #f6e58d; color: #c0392b">Box 9</td>
+        <td style="background-color: #f6e58d; color: #130f40">Box 10</td>
+        <td style="background-color: #130f40; color: #535c68">Box 11</td>
+        <td style="background-color: #be2edd; color: #30336b">Box 12</td>
+        <td style="background-color: #535c68; color: #c7ecee">Box 13</td>
+        <td style="background-color: #1B1464; color: #D980FA">Box 14</td>
+        <td style="background-color: #009432; color: #0652DD">Box 15</td>
+        <td style="background-color: #6F1E51; color: white">Box 16</td>
+        <td style="background-color: #F79F1F; color: #EA2027">Box 17</td>
+        <td style="background-color: #C4E538; color: #1B1464">Box 18</td>
+        <td style="background-color: #1B1464; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #0652DD">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: red; color: white">Box 1</td>
+        <td style="background-color: #0652DD; color: black">Box 2</td>
+        <td style="background-color: #1B1464; color: gray">Box 3</td>
+        <td style="background-color: #A3CB38; color: #D980FA">Box 4</td>
+        <td style="background-color: black; color: white">Box 5</td>
+        <td style="background-color: blue; color: black">Box 6</td>
+        <td style="background-color: yellow; color: blue">Box 7</td>
+        <td style="background-color: violet; color: green">Box 8</td>
+        <td style="background-color: teal; color: tomato">Box 9</td>
+        <td style="background-color: aqua; color: black">Box 10</td>
+        <td style="background-color: darkblue; color: gray">Box 11</td>
+        <td style="background-color: gold; color: navy">Box 12</td>
+        <td style="background-color: green; color: brown">Box 13</td>
+        <td style="background-color: white; color: black">Box 14</td>
+        <td style="background-color: black; color: maroon">Box 15</td>
+        <td style="background-color: maroon; color: magenta">Box 16</td>
+        <td style="background-color: darkmagenta; color: burlywood">Box 17</td>
+        <td style="background-color: #6F1E51; color: #0652DD">Box 18</td>
+        <td style="background-color: #D980FA; color: #6F1E51">Box 19</td>
+        <td style="background-color: #A3CB38; color: #9980FA">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #ef5777; color: #575fcf">Box 1</td>
+        <td style="background-color: #4bcffa; color: #34e7e4">Box 2</td>
+        <td style="background-color: #0be881; color: #0fbcf9">Box 3</td>
+        <td style="background-color: #3c40c6; color: white">Box 4</td>
+        <td style="background-color: #00d8d6; color: #05c46b">Box 5</td>
+        <td style="background-color: #ffc048; color: #ff5e57">Box 6</td>
+        <td style="background-color: #808e9b; color: #1e272e">Box 7</td>
+        <td style="background-color: #3c40c6; color: #0fbcf9">Box 8</td>
+        <td style="background-color: #ff3f34; color: #1e272e">Box 9</td>
+        <td style="background-color: #00d8d6; color: #ffc048">Box 10</td>
+        <td style="background-color: #0fbcf9; color: #3c40c6">Box 11</td>
+        <td style="background-color: #575fcf; color: #ff5e57">Box 12</td>
+        <td style="background-color: #f53b57; color: #ff5e57">Box 13</td>
+        <td style="background-color: #FFC312; color: #A3CB38">Box 14</td>
+        <td style="background-color: #12CBC4; color: #FDA7DF">Box 15</td>
+        <td style="background-color: #FDA7DF; color: #ED4C67">Box 16</td>
+        <td style="background-color: #EE5A24; color: #009432">Box 17</td>
+        <td style="background-color: #EA2027; color: #1B1464">Box 18</td>
+        <td style="background-color: #5758BB; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #1B1464">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #40407a; color: #706fd3">Box 1</td>
+        <td style="background-color: #f7f1e3; color: #34ace0">Box 2</td>
+        <td style="background-color: #2c2c54; color: #474787">Box 3</td>
+        <td style="background-color: #ffb300; color: #504e4a">Box 4</td>
+        <td style="background-color: #ff5252; color: #ff793f">Box 5</td>
+        <td style="background-color: #b33939; color: #33d9b2">Box 6</td>
+        <td style="background-color: #b33939; color: #34ace0">Box 7</td>
+        <td style="background-color: #34ace0; color: #227093">Box 8</td>
+        <td style="background-color: rgb(149, 78, 78); color: rgb(86, 164, 41)">Box 9</td>
+        <td style="background-color: rgb(149, 222, 65); color: rgb(21, 197, 132)">Box 10</td>
+        <td style="background-color: rgb(174, 102, 102); color: rgb(30, 138, 122)">Box 11</td>
+        <td style="background-color: rgb(135, 115, 192); color: rgb(145, 203, 134)">Box 12</td>
+        <td style="background-color: rgb(34, 75, 163); color: white">Box 13</td>
+        <td style="background-color: rgb(100, 70, 183); color: rgba(144, 19, 132, 0.686)">Box 14</td>
+        <td style="background-color: rgb(56, 60, 188); color: rgb(37, 116, 87)">Box 15</td>
+        <td style="background-color: rgb(93, 11, 40); color: rgb(149, 186, 176)">Box 16</td>
+        <td style="background-color: rgb(99, 47, 187); color: rgb(96, 189, 160)">Box 17</td>
+        <td style="background-color: rgb(131, 63, 63); color: rgb(62, 9, 9)">Box 18</td>
+        <td style="background-color: rgb(214, 153, 153); color: rgb(33, 15, 15)">Box 19</td>
+        <td style="background-color: rgb(34, 156, 91); color: rgb(199, 47, 47)">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #1abc9c; color: white">Box 1</td>
+        <td style="background-color: #16a085; color: #000000">Box 2</td>
+        <td style="background-color: #2ecc71; color: #9b59b6">Box 3</td>
+        <td style="background-color: #2980b9; color: #e74c3c">Box 4</td>
+        <td style="background-color: #c0392b; color: #7f8c8d">Box 5</td>
+        <td style="background-color: #f39c12; color: #e74c3c">Box 6</td>
+        <td style="background-color: #f1c40f; color: #e67e22">Box 7</td>
+        <td style="background-color: #f39c12; color: #bdc3c7">Box 8</td>
+        <td style="background-color: #f6e58d; color: #c0392b">Box 9</td>
+        <td style="background-color: #f6e58d; color: #130f40">Box 10</td>
+        <td style="background-color: #130f40; color: #535c68">Box 11</td>
+        <td style="background-color: #be2edd; color: #30336b">Box 12</td>
+        <td style="background-color: #535c68; color: #c7ecee">Box 13</td>
+        <td style="background-color: #1B1464; color: #D980FA">Box 14</td>
+        <td style="background-color: #009432; color: #0652DD">Box 15</td>
+        <td style="background-color: #6F1E51; color: white">Box 16</td>
+        <td style="background-color: #F79F1F; color: #EA2027">Box 17</td>
+        <td style="background-color: #C4E538; color: #1B1464">Box 18</td>
+        <td style="background-color: #1B1464; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #0652DD">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: red; color: white">Box 1</td>
+        <td style="background-color: #0652DD; color: black">Box 2</td>
+        <td style="background-color: #1B1464; color: gray">Box 3</td>
+        <td style="background-color: #A3CB38; color: #D980FA">Box 4</td>
+        <td style="background-color: black; color: white">Box 5</td>
+        <td style="background-color: blue; color: black">Box 6</td>
+        <td style="background-color: yellow; color: blue">Box 7</td>
+        <td style="background-color: violet; color: green">Box 8</td>
+        <td style="background-color: teal; color: tomato">Box 9</td>
+        <td style="background-color: aqua; color: black">Box 10</td>
+        <td style="background-color: darkblue; color: gray">Box 11</td>
+        <td style="background-color: gold; color: navy">Box 12</td>
+        <td style="background-color: green; color: brown">Box 13</td>
+        <td style="background-color: white; color: black">Box 14</td>
+        <td style="background-color: black; color: maroon">Box 15</td>
+        <td style="background-color: maroon; color: magenta">Box 16</td>
+        <td style="background-color: darkmagenta; color: burlywood">Box 17</td>
+        <td style="background-color: #6F1E51; color: #0652DD">Box 18</td>
+        <td style="background-color: #D980FA; color: #6F1E51">Box 19</td>
+        <td style="background-color: #A3CB38; color: #9980FA">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #ef5777; color: #575fcf">Box 1</td>
+        <td style="background-color: #4bcffa; color: #34e7e4">Box 2</td>
+        <td style="background-color: #0be881; color: #0fbcf9">Box 3</td>
+        <td style="background-color: #3c40c6; color: white">Box 4</td>
+        <td style="background-color: #00d8d6; color: #05c46b">Box 5</td>
+        <td style="background-color: #ffc048; color: #ff5e57">Box 6</td>
+        <td style="background-color: #808e9b; color: #1e272e">Box 7</td>
+        <td style="background-color: #3c40c6; color: #0fbcf9">Box 8</td>
+        <td style="background-color: #ff3f34; color: #1e272e">Box 9</td>
+        <td style="background-color: #00d8d6; color: #ffc048">Box 10</td>
+        <td style="background-color: #0fbcf9; color: #3c40c6">Box 11</td>
+        <td style="background-color: #575fcf; color: #ff5e57">Box 12</td>
+        <td style="background-color: #f53b57; color: #ff5e57">Box 13</td>
+        <td style="background-color: #FFC312; color: #A3CB38">Box 14</td>
+        <td style="background-color: #12CBC4; color: #FDA7DF">Box 15</td>
+        <td style="background-color: #FDA7DF; color: #ED4C67">Box 16</td>
+        <td style="background-color: #EE5A24; color: #009432">Box 17</td>
+        <td style="background-color: #EA2027; color: #1B1464">Box 18</td>
+        <td style="background-color: #5758BB; color: #0652DD">Box 19</td>
+        <td style="background-color: #1289A7; color: #1B1464">Box 20</td>
+      </tr>
+      <tr>
+        <td style="background-color: #40407a; color: #706fd3">Box 1</td>
+        <td style="background-color: #f7f1e3; color: #34ace0">Box 2</td>
+        <td style="background-color: #2c2c54; color: #474787">Box 3</td>
+        <td style="background-color: #ffb300; color: #504e4a">Box 4</td>
+        <td style="background-color: #ff5252; color: #ff793f">Box 5</td>
+        <td style="background-color: #b33939; color: #33d9b2">Box 6</td>
+        <td style="background-color: #b33939; color: #34ace0">Box 7</td>
+        <td style="background-color: #34ace0; color: #227093">Box 8</td>
+        <td style="background-color: rgb(149, 78, 78); color: rgb(86, 164, 41)">Box 9</td>
+        <td style="background-color: rgb(149, 222, 65); color: rgb(21, 197, 132)">Box 10</td>
+        <td style="background-color: rgb(174, 102, 102); color: rgb(30, 138, 122)">Box 11</td>
+        <td style="background-color: rgb(135, 115, 192); color: rgb(145, 203, 134)">Box 12</td>
+        <td style="background-color: rgb(34, 75, 163); color: white">Box 13</td>
+        <td style="background-color: rgb(100, 70, 183); color: rgba(144, 19, 132, 0.686)">Box 14</td>
+        <td style="background-color: rgb(56, 60, 188); color: rgb(37, 116, 87)">Box 15</td>
+        <td style="background-color: rgb(93, 11, 40); color: rgb(149, 186, 176)">Box 16</td>
+        <td style="background-color: rgb(99, 47, 187); color: rgb(96, 189, 160)">Box 17</td>
+        <td style="background-color: rgb(131, 63, 63); color: rgb(62, 9, 9)">Box 18</td>
+        <td style="background-color: rgb(214, 153, 153); color: rgb(33, 15, 15)">Box 19</td>
+        <td style="background-color: rgb(34, 156, 91); color: rgb(199, 47, 47)">Box 20</td>
+      </tr>
+    </table>
+  </body>
+</html>
